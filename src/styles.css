@@ -1,0 +1,165 @@
+/* src/styles.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure it uses minimum height */
+  padding: 1rem;
+}
+
+.formContainer {
+  background: #fff;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Limit the maximum width for responsiveness */
+  margin: 1rem; /* Add margin for spacing on small screens */
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background: blue;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: darkblue;
+}
+
+.link {
+  color: blue;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem; /* Responsive title size */
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+  gap: 1rem; /* Add space between buttons */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 1rem;
+  flex-wrap: wrap; /* Allow nav items to wrap */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+a-scene {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .title {
+    font-size: 1.3rem; /* Slightly smaller title on small screens */
+  }
+
+  .description {
+    font-size: 1rem; /* Smaller text for better readability */
+  }
+
+  .button {
+    font-size: 0.9rem; /* Adjust button text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 120px; /* Smaller logo on very small screens */
+  }
+
+  .title {
+    font-size: 1.2rem; /* Adjust title font size further */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Reduce description size */
+  }
+
+  .button {
+    font-size: 0.8rem; /* Adjust button size further */
+    padding: 0.5rem; /* Adjust padding for small screens */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack nav items vertically */
+  }
+
+  .nav-link {
+    padding: 0.75rem; /* Adjust nav link padding */
+  }
+}
